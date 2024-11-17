@@ -1,0 +1,222 @@
+<html lang="es">
+    <head>
+<title> Blog personal </title>
+        <link rel="stylesheet" href="estilo.css">
+        <script type="text/Java" defer src="js/jquery-3.5.1.js"></script>
+        <script defer src="Java/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+<header>
+<h1> Blog personal Iván</h1>
+</header>
+<nav>
+    <ul>
+      <li><a href="#Inicio" class="active">Inicio</a></li>
+      <li>
+        <a href="#Importante">Importante</a>
+        <ul>
+          <li><a href="#Horario">Horario</a></li>
+          <li><a href="#Anotaciones">Anotaciones</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#QueSaber">Que Debes Saber</a>
+        <ul>
+          <li><a href="#Lugar">Donde estamos?</a></li>
+          <li><a href="#Páginas">Páginas importantes</a></li>
+        </ul>
+      </li>
+      <li><a href="#Extras">Extras</a></li>
+    </ul>
+  </nav>
+  <br>
+  <article>
+  <div id="Inicio" a name="Inicio" class="Inicio">
+<h2> Inicio </h2>
+<hr style="border: solid; border-width: 1px;">
+<p> Hola, soy Iván. Estudiante del IES Claudio Sánchez Albornoz, donde curso el bachillerato de excelencia con un enfoque en asignaturas como Química, Biología, TIC y Matemáticas académicas. Este blog está diseñado para organizar mi vida académica.
+Mi objetivo principal es centralizar el acceso a herramientas clave como Educacyl, los servicios de Office365 de Microsoft, y recursos del instituto. Además, este sitio funciona como una agenda y recordatorio para gestionar mejor mis tareas y actividades, y me sirve para evaluarse en la asignatura de TIC.
+Por último, porque no todo es estudiar, he incluido una sección de extras con juegos para desconectar y pasar el rato. Espero que te sirva mi blog.</p>
+</div>
+<br>
+<div class="Importante" a name="Importante" id="Importante">
+<h2> Importante </h2>
+<hr style="border: solid; border-width: 1px;">
+<p> Aquí figura lo que vas a <strong>usar en el día a día </strong>. Este es mi horario, si deseas modificarlo, puedes entrar al script y cambiar las horas.
+  Solo detectará asignaturas que registres en el propio script, les puedes asignar un color de fondo en el estilo. 
+  Para evitar problemas con el código, la agenda, donde puedes organizarte, viene en otro index.
+</p>
+
+<div id="Horario" class="Horario" a name="Horario">
+<h3 style="text-align: center;">Horario Semanal</h3>
+<table id="horario">
+  <thead>
+      <tr>
+          <th>Hora/Día</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <!-- Las filas del horario se generan dinámicamente -->
+  </tbody>
+</table>
+<h3 style="text-align: center;" id="Anotaciones"> Agenda Personal </h3>
+<p style="text-align: center;"> El siguiente botón te llevará a una <strong>agenda</strong> donde puedes guardar todos los eventos, ya sean exámenes o trabajos.
+  Selecciona una fecha, introduce el evento de ese día y guardalo. Puedes eliminar eventos individualmente o todos, si lo deseas.
+</p>
+<div style="text-align: center;">
+<button class="agenda" onclick="location.href='agenda.html'" style>Agenda</button>
+</div>
+<link rel="stylesheet" href="horario.css">
+<script src="Java/horario.js"></script>
+<p style="text-align: center;"> El siguiente apartado trata sobre datos generales y algunas cosas que debes saber.</p>
+</div>
+</div>
+<br>
+<div id="QueSaber" class="QueSaber">
+  <h2> ¿Qué debemos saber? </h2>
+  <p> Ahora vamos a hablar un poco del instituto y todas las páginas que necesitarás usar para tus tareas. </p>
+  <hr style="border: solid; border-width: 1px;">
+  <h3 id="Lugar" style="text-align: center;">¿Dónde estamos?</h3>
+
+    <!-- Contenedor principal -->
+    <div id="ubicación" class="ubicacion">
+        <!-- Columna izquierda -->
+        <div id="columnaizq">
+            <img src="Imágenes/IES Claudio.jpg" alt="Imagen del IES Claudio Sánchez Albornoz" id="imagenies">
+        </div>
+    
+        <!-- Columna derecha -->
+        <div id="columnader">
+            <h2>IES Claudio Sánchez Albornoz</h2>
+            <p>
+                Ubicado en <strong>Av. de Mariano Andrés, 1, 24008 León</strong>, el IES Claudio Sánchez Albornoz 
+                es un centro educativo que ofrece una amplia variedad de opciones formativas para estudiantes de educación secundaria y bachillerato. 
+            </p>
+            <p>
+                En este instituto puedes cursar la Educación Secundaria Obligatoria (ESO) y diversas modalidades de Bachillerato:
+            </p>
+            <ul>
+                <li><strong>Bachillerato de Ciencias y Tecnología</strong>: Ideal para quienes desean profundizar en las áreas científicas o tecnológicas.</li>
+                <li><strong>Bachillerato de Humanidades y Ciencias Sociales</strong>: Enfocado en los estudios de letras, historia y ciencias sociales.</li>
+                <li><strong>Bachillerato de Artes</strong>: Con dos modalidades específicas:
+                    <ul>
+                        <li>Artes Plásticas.</li>
+                        <li>Música y Artes Escénicas.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Además, el centro cuenta con un programa de <strong>Bachillerato de Excelencia</strong>, diseñado para estudiantes destacados. Este programa incluye clases por las tardes orientadas a la preparación universitaria, así como la realización de un proyecto final que fomenta la investigación y el desarrollo académico.
+            </p>
+        </div>
+    </div>
+    <div id="Mapa" class="mapa">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.385979655688!2d-5.5767708240556475!3d42.60425687117119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a8f12a7cff9%3A0xcf14c8a725e8691e!2sIES%20Claudio%20S%C3%A1nchez%20Albornoz!5e0!3m2!1ses!2ses!4v1731870056211!5m2!1ses!2ses" 
+    width="100%" 
+    height="200" 
+    style="border:0;" 
+    loading="lazy" >
+    </iframe>
+    </div>
+</iframe>
+<div class="páginas" id="Páginas">
+  <h3> Páginas importantes</h3> <br>
+  <div class="botonespáginas">
+  <button class="pagina-btn" onclick="location.href='https://www.educa.jcyl.es/es'">Educacyl</button>
+  <button class="pagina-btn" onclick="location.href='https://www.office.com/'">Office365</button>
+  <button class="pagina-btn" onclick="location.href='http://iesclaudiosanchezalbornoz.centros.educa.jcyl.es/sitio/'">IES Claudio Sanchez Albornoz</button>
+</div>
+</div>
+
+
+</div>
+</div>
+<br>
+<div id="Extras" class="Extras">
+<h2> Extras </h2>
+<hr style="border: solid; border-width: 1px;">
+<p> Cuando te aburras, puedes jugar a este juego <strong>"CLÁSICO CLÁSICO"</strong>, que te puede entretener. </p>
+<div class="botonespáginas">
+<button class="game-btn" onclick="location.href='snake.html'">Juego de la Serpiente</button>
+</div>
+
+
+
+</div>
+<!--calendario-->
+<footer>
+  <button id="showCalendarBtn" style="
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #D8CFC4; 
+    color: #3E2A47;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 2;">Mostrar Calendario</button>
+  <div id="calendar" class="calendar">
+    <div class="calendar-header">
+      <button id="prevMonthBtn">⬅️</button>
+      <span id="monthYear"></span>
+      <button id="nextMonthBtn">➡️</button>
+    </div>
+    <table id="calendarTable">
+      <thead>
+        <tr>
+          <th>🌞<br><b>Dom</b></th>
+          <th>🌝<br><b>Lun</b></th>
+          <th>🌕<br><b>Mar</b></th>
+          <th>🌑<br><b>Mié</b></th>
+          <th>🌒<br><b>Jue</b></th>
+          <th>🌓<br><b>Vie</b></th>
+          <th>🌘<br><b>Sáb</b></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

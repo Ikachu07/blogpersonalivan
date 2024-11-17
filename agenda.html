@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+    <div id="agenda-container">
+        <h1>Agenda</h1>
+        <div id="date-selector">
+            <label for="date">Selecciona una fecha:</label>
+            <input type="date" id="date">
+        </div>
+        <div id="notebook">
+            <div class="rings"></div>
+            <textarea id="note" placeholder="Escribe tus notas aquí..."></textarea>
+        </div>
+        <div id="buttons">
+            <button id="save-button">Guardar</button>
+            <button id="view-events">Ver eventos</button>
+            <button id="delete-note">Eliminar nota</button>
+            <button id="delete-all">Eliminar todas las notas</button>
+        </div>
+        <div id="event-list" class="hidden">
+            <h2>Eventos guardados</h2>
+            <ul id="events"></ul>
+        </div>
+    </div>
+    <script src="Java/agenda.js"></script>
+</body>
+</html>
