@@ -15,7 +15,11 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 40px 0;
   }
-  
+  .Derechos de Autor{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
 
   header {
     background-color: #e0d5c8;
